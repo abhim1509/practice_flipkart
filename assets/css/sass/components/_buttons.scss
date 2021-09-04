@@ -1,0 +1,26 @@
+@use "./../abstracts/variables";
+
+.btn-login > button{
+    background-color: variables.$white;
+    color: variables.$flipkart-blue;
+    width: 96px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+.btn-login{
+    width: 35%;
+}
+
+.btn-view-all > button{
+    background-color: variables.$flipkart-blue;
+    color: variables.$white;
+    width: 96px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+
+}

@@ -1,0 +1,12 @@
+{
+  "name": "flipkart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch" : "sass 'C:/Users/u6064373/OneDrive - Thomson Reuters Incorporated/Desktop/VSC/assignments/flipkart/assets/css/sass/_main.scss' assets/css/mains.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

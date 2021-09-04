@@ -1,0 +1,74 @@
+@use "./../abstracts/variables";
+
+.nav-items{
+    padding: 7px;
+}
+
+.list-container{
+    width: 70%;
+    margin: auto;
+}
+
+.list-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-items-img > img{
+    width: 64px;
+    height: 64px;
+}
+
+.nav-items-txt{
+    display: flex;
+    justify-content: center;
+    color: variables.$link-text-grey;
+    font-family: variables.$link-font-family;
+    font-size: variables.$link-font-size;
+    font-weight: variables.$link-font-weight;
+}
+
+.nav-items-txt:hover{
+    color: variables.$flipkart-blue;
+}
+.nav-items-img{
+    box-sizing: border-box;
+}
+
+.card{
+    padding: 25px 15px;
+}
+
+.main-list-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+
+}
+
+.card-text-primary{
+    font-size: variables.$text-primary-size;
+    font-weight: variables.$text-primary-weight;
+    color: variables.$text-primary-color;
+}
+
+.card-price{
+    font-size: variables.$text-discount-size;
+    color: variables.$text-discount-color;
+    
+}
+
+.card-comments{
+    text-overflow: ellipsis;
+    font-size: variables.$text-primary-size;
+    font-weight: variables.$text-primary-weight;
+    color: variables.$text-primary-color;
+
+}

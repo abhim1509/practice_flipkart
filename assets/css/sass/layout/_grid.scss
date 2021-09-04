@@ -1,0 +1,52 @@
+@use "./../abstracts/variables";
+
+.outer-main-content{
+    background-color: variables.$bg-grey;
+}
+
+.inner-main-container{
+    margin: auto;
+    width: 90%;
+    padding: 8px;
+}
+
+.slider > img{
+    width: 100%;
+}
+
+.main-list-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: variables.$white;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.main-list-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-list-heading{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.lg-card-container{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    justify-content: space-between;
+    background-color: variables.$white;
+
+}
+
+.lg-card > img{
+    height: 293.219px;
+    width: 546.609px;
+}

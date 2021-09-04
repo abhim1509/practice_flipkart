@@ -1,0 +1,10 @@
+@use "./../abstracts/variables";
+
+.nav-arrow{
+    transform: rotate(-90deg);
+}
+
+.nav-arrow:hover {
+    transform: rotate(90deg);
+}
+
