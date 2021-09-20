@@ -50,3 +50,68 @@
     height: 293.219px;
     width: 546.609px;
 }
+
+.card{
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+
+.carousel-container{
+
+    overflow: hidden;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 500%;
+    animation: 10s slider infinite;
+}
+
+.carousel > img{
+    width: 20%;
+}
+
+@keyframes slider{
+    0%{
+        left:0;
+    }
+    20%{
+        left:-100%
+    }
+    40%{
+        left:-200%
+    }
+    80%{
+        left:-300%
+    }
+}
+.carousel-container{
+    position: relative;
+}
+
+@mixin carousel-btn {
+    position:absolute;
+    z-index:3;
+    top: 50%;
+    height: 40%;
+    transform: translateY(-50%);
+    margin: -1px;
+    width: 3%;
+    outline: none;
+    background-color: variables.$white;
+    outline: none;
+    border: none;
+    
+}
+.carousel-btn-left{
+    left:0;
+    @include carousel-btn;
+}
+
+.carousel-btn-right{
+    right:0;
+    @include carousel-btn;
+}

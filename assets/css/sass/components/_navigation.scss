@@ -29,7 +29,7 @@
 #upper-nav{
     @include flex-row;
     justify-content: space-around;
-    padding: 5px 100px;
+    padding: 0 200px;
 }
 
 .upper-left-nav{
@@ -103,17 +103,23 @@ a{
     font-size: 16px;
     font-weight: 500;
     color: variables.$white;
+    margin-right: 5px;
+}
+.more-container{
+    display: inline-block;
+    padding: 35px 0;
+    &:hover{
+        .dropdown{
+            display: block;
+        }
+    }
+
 }
 
 .nav-more{
     @include flex-row;
     justify-content: space-around;
     position: relative;
-    &:hover{
-        .dropdown{
-            display: block;
-        }
-    }
 }
 
 
@@ -121,7 +127,7 @@ a{
     position: absolute;
     background-color: variables.$white;
     width: 200px;
-    top:45px;
+    top:25px;
     display: none;
 }
 
@@ -136,4 +142,13 @@ a{
 .more-dropdown-row{
     padding: 5px;
     margin-bottom: 0.5px solid rgb(66, 65, 65);    
+}
+
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }

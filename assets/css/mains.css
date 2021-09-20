@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap");
 p, h1, h2, h3, h4, h5, h6, label, input, select, textarea, a {
   font-family: "Roboto", sans-serif;
 }
@@ -110,7 +110,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 5px 100px;
+  padding: 0 200px;
 }
 
 .upper-left-nav {
@@ -186,6 +186,15 @@ a {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
+  margin-right: 5px;
+}
+
+.more-container {
+  display: inline-block;
+  padding: 35px 0;
+}
+.more-container:hover .dropdown {
+  display: block;
 }
 
 .nav-more {
@@ -194,15 +203,12 @@ a {
   justify-content: space-around;
   position: relative;
 }
-.nav-more:hover .dropdown {
-  display: block;
-}
 
 .dropdown {
   position: absolute;
   background-color: #fff;
   width: 200px;
-  top: 45px;
+  top: 25px;
   display: none;
 }
 
@@ -219,21 +225,34 @@ a {
   margin-bottom: 0.5px solid #424141;
 }
 
-.btn-login > button {
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.btn-login > a {
   background-color: #fff;
   color: #2874f0;
-  width: 96px;
-  height: 32px;
   font-size: 16px;
   font-weight: 500;
   border: none;
+  padding: 5px 40px;
 }
 
 .btn-login {
   width: 35%;
 }
 
-.btn-view-all > button {
+.btn-view-all {
+  padding: 5px 10px;
+  background-color: #2874f0;
+}
+
+.btn-view-all > a {
   background-color: #2874f0;
   color: #fff;
   width: 96px;
@@ -290,6 +309,75 @@ a {
 .lg-card > img {
   height: 293.219px;
   width: 546.609px;
+}
+
+.card {
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.carousel-container {
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 500%;
+  animation: 10s slider infinite;
+}
+
+.carousel > img {
+  width: 20%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  80% {
+    left: -300%;
+  }
+}
+.carousel-container {
+  position: relative;
+}
+
+.carousel-btn-left {
+  left: 0;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  height: 40%;
+  transform: translateY(-50%);
+  margin: -1px;
+  width: 3%;
+  outline: none;
+  background-color: #fff;
+  outline: none;
+  border: none;
+}
+
+.carousel-btn-right {
+  right: 0;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  height: 40%;
+  transform: translateY(-50%);
+  margin: -1px;
+  width: 3%;
+  outline: none;
+  background-color: #fff;
+  outline: none;
+  border: none;
 }
 
 /*# sourceMappingURL=mains.css.map */
